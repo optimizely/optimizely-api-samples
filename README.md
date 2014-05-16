@@ -1,4 +1,1 @@
-optimizely-api-samples
-======================
-
-Code samples for APIs documented on developers.optimizely.com
+See [developers.optimizely.com](http://developers.optimizely.com).
