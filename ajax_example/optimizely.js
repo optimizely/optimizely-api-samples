@@ -52,6 +52,37 @@ OptimizelyAPI.prototype.call = function(type, endpoint, data, callback) {
 }
 
 /*
+If you would like to make the request above without a third party dependency like jQuery, you can use the following JavaScript function.
+*/
+
+OptimizelyAPI.prototype.call = function(type, endpoint, data, callback) {
+
+  var self = this;
+
+  var ajaxRequest = new XMLHttpRequest();
+  ajaxRequest.open(type, "https://www.optimizelyapis.com/experiment/v1/" + endpoint);
+  ajaxRequest.setRequestHeader("Token", this.token);
+  ajaxRequest.responseType = 'json';
+  ajaxRequest.addEventListener("load", ajaxSuccess, false);
+  ajaxRequest.addEventListener("error", ajaxSuccess, false);
+
+  function ajaxSuccess (e) {
+    self.outstandingRequests -= 1;
+    callback(ajaxRequest.response);
+  }
+
+  function ajaxError (e) {
+    console.log("Optimizely Ajax: there be errors");
+  }
+
+  var data = data || '';
+
+  this.outstandingRequests += 1;
+  ajaxRequest.send(data);
+}
+
+
+/*
 Using our `call` function, we can define convenience functions for GETs, POSTs, PUTs, and DELETEs.
 */
 
