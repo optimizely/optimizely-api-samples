@@ -1,0 +1,7 @@
+optimizely_rest_api_token: your_optimizely_api_token
+optimizely_project_id: 123456
+twilio_account_id: ABC123
+twilio_auth_token: abc12321cba
+notification_sender_number: +12145551234
+notification_recipient_number: +12148675309
+appengine_app_id: your-app-id

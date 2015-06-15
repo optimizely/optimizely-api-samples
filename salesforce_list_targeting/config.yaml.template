@@ -1,0 +1,4 @@
+optimizely_rest_api_token: your_optimizely_api_token
+salesforce_username: test123@optimizely.com
+salesforce_password: ABC123
+salesforce_security_token: abc12321cba
