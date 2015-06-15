@@ -1,0 +1,3 @@
+beatbox-0.96.zip
+PyYAML==3.11
+requests==2.7.0

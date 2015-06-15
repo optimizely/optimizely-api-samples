@@ -1,0 +1,3 @@
+*.pyc
+app/libs/
+config.yaml
