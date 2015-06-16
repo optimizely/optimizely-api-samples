@@ -23,6 +23,8 @@ To run the script:
 
 - Populate the credentials required in config.yaml.template and re-name that file to config.yaml.
 - Ensure you're either using Python 2.7 or, ideally, create a new [virtualenv](https://virtualenv.pypa.io/en/latest/).
+- From the `salesforce_list_targeting` directory, run: `pip install -r requirements.txt` to install required Python
+libraries.
 - Run the script as described above.
 
 Note that we do not consider this code production-ready, but we hope it's a useful starting point to build on top of
