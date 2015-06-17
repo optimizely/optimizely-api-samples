@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Opticon2015Demo</string>
+
+    <string name="title_section1">Dialog Demo</string>
+    <string name="title_section2">Geofencing Demo</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="sale_dialog_button_text">Open Sales Dialog</string>
+    <string name="another_dialog">Open another dialog</string>
+</resources>
