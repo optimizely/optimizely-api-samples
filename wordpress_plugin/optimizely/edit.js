@@ -72,7 +72,7 @@ function optimizelyEditPage() {
 
     experiment = {};
     experiment.description = "Wordpress: " + $('#title').val();
-    experiment.edit_url = $('#sample-permalink').text();
+    experiment.edit_url = $('#view-post-btn').children('a').attr('href');
 
     optly.post('projects/' + projectId + '/experiments', experiment, onExperimentCreated);
   }
